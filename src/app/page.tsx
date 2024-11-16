@@ -1,7 +1,9 @@
 import HeroPage from "./components/HeroPage"
 import Nav from "./components/Nav"
 
-export default function Home() {
+export default async function Home() {
+    
+
   return (
     <div className="w-full  caret-transparent flex flex-col justify-center items-center   ">
       <Nav/>
