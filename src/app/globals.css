@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 body{
-    background-color: rgb(17, 17, 17);
-    color: aliceblue;
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
@@ -29,4 +27,27 @@ body{
     width: 100%;
     border-radius: 3px;
 
+}
+
+
+@layer base {
+.remove-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
+    /* background: #1e2238; */
+    background: transparent;
+  }
 }
